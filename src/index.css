@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Helvetica Compressed";
+    src: url("./Utils/Fonts/Helvetica_Compressed.otf") format("opentype");
+}
+@font-face {
+    font-family: "Absolute Empire";
+    src: url("./Utils/Fonts/aAbsoluteEmpire.otf") format("opentype");
+}
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("./Utils/Fonts/ClashDisplay-Semibold.otf") format("opentype");
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.wallet-container {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.wallet-title {
+    text-align: center;
+    color: #032249;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.connect-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e8f1ff;
+    color: #0d47a1;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.network-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.connection-status {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.current-network {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.token-select,
+.address-input,
+.amount-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.send-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.send-button:disabled {
+    background-color: #b3c1d5;
+    cursor: not-allowed;
+}
